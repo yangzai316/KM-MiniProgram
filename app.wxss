@@ -1,0 +1,15 @@
+/**app.wxss**/
+@import "/font/iconfont.wxss";
+page{
+	background-color:#f1f1f1; 
+	color:#666; 
+	font-family: "Microsoft YaHei";
+  	box-sizing: border-box;  
+	font-size:28rpx; 
+} 
+.text_center{
+	text-align: center;
+}
+.navigator-hover{  
+	background-color: #fff;
+}

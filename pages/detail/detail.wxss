@@ -1,0 +1,60 @@
+.container{
+	margin:20rpx;
+	padding-bottom:50rpx;
+	background-color: #fff;
+}
+.input_box{
+	overflow: hidden; 
+	clear: both;  
+	line-height: 100rpx;
+	border-bottom: 1px solid #eee;
+	margin:0 20rpx;
+}
+.input_name{
+	width: 20%;
+	float: left;
+	padding-right: 20rpx;
+	text-align: right;
+}
+.input_val{
+	width: 72%;
+	float: left;
+	line-height:36rpx;
+	padding:32rpx 0; 
+} 
+.input_val .content{
+	height: 250rpx;
+} 
+.import{
+	font-size:40rpx; 
+	color: #1180ff;
+}   
+.icon-shijian{
+	color:#1180ff;
+} 
+.btn_box{
+	overflow: hidden;
+	clear: both;
+	padding-top: 40rpx;
+}
+.btn{
+  width:30%; 
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  font-size: 24rpx;
+  background-color: #fff;
+  border-radius: 6rpx;
+}
+.btn_remove{ 
+  	border:1px #1180ff solid;
+	float: left;
+  	color:#1180ff;  
+	margin-left: 10%; 
+}
+.btn_reset{ 
+  	border:1px #f52728 solid;
+	float: right;
+  	color:#f52728;
+	margin-right: 10%;
+}

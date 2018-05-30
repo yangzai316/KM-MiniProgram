@@ -1,0 +1,47 @@
+page{
+  background-color: #fff;
+} 
+image{
+  display: block;
+  margin:0 auto;
+  width: 50%;
+} 
+.txt{ 
+  margin:0 auto;
+  width: 440rpx; 
+  font-size: 32rpx;
+}
+.txt text{
+    color:#1180ff;
+    font-weight: bold;
+  } 
+.txt view{
+  margin:40rpx 0;
+}
+.two_txt{
+  padding-left:128rpx;
+}
+.two_txt1{
+  padding-left:64rpx;
+}
+.two_txt2{
+  padding-left:180rpx;
+}
+.gobtn{
+  width:90%;
+  margin:50rpx 5%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center; 
+  border:2rpx #1180ff solid;
+  color:#1180ff;
+  font-size: 16px;
+  border-radius: 4px;
+  float:right; 
+  margin-top: 50rpx;
+}
+.record{
+  font-size: 22rpx;
+  padding-right:6%;
+  text-align: right; 
+}

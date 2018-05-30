@@ -1,0 +1,59 @@
+.status{  
+	height:80rpx;  
+	margin-bottom: 20rpx;
+	text-align: center;
+	font-size: 0;
+}
+.status_item{
+	width: 33.33%;
+	height: 80rpx;
+	line-height: 80rpx; 
+	display: inline-block;
+  	box-sizing: border-box;
+  	background-color: #fff;
+	font-size: 14px;
+}
+.active{
+	border-bottom:4rpx solid #1180ff;
+}
+.list_item{
+	padding:24rpx 30rpx 24rpx 80rpx; 
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 10rpx;
+}
+.list_item icon{
+	position: absolute;
+	top:24rpx;
+	left:24rpx; 
+}
+.list_item .title{
+	font-size: 13px;
+	margin-bottom:18rpx; 
+}	
+.list_item .content{
+	font-size: 12px;
+}
+.list_item .content .import{
+	float: right;
+	color:#f52728;
+}
+.addbtn{
+	position: fixed;
+	width: 160rpx;
+	height: 136rpx; 
+	text-align: center;
+	bottom:80rpx;
+	right:80rpx;
+	color:#1180ff; 
+}
+.addbtn navigator{ 
+  width: 96rpx;
+	height: 96rpx; 
+	border-radius: 50%;
+  display: block;
+  margin:0 auto;
+}
+.addbtn i{
+	font-size:96rpx;  
+} 

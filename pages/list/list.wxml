@@ -1,0 +1,30 @@
+<view class="container"> 
+	<view class="status">
+		<view class="status_item {{classActive9 ? 'active':' '}}" bindtap="changeStatus" data-status="9">全部</view>
+		<view class="status_item {{classActive1 ? 'active':' '}}" bindtap="changeStatus" data-status="1">已完成</view>
+		<view class="status_item {{classActive0 ? 'active':' '}}" bindtap="changeStatus" data-status="0">未完成</view> 
+	</view>  
+	<view class="list">  
+		<block wx:for="{{storageData}}" wx:key="index">
+		<navigator url="/pages/detail/detail?dayId={{dayId}}&itemId={{index}}" class="list_item" wx:if="{{completeKey==9?true:false}}"> 
+			<icon type="success" size="20"  wx:if="{{item.completed}}" data-id="{{index}}" catchtap="changeCompleted"/>
+			<icon type="waiting" size="20"  wx:if="{{!item.completed}}" data-id="{{index}}" catchtap="changeCompleted"/>
+			<view class="title">{{item.title}}</view> 
+			<view class="content"><text>{{item.time}}</text><text class="import"><block wx:for="{{item.importState}}" wx:key="index">★</block></text></view> 
+		</navigator>
+		<navigator url="/pages/detail/detail?dayId={{dayId}}&itemId={{index}}" class="list_item" wx:elif="{{item.completed==completeKey}}"> 
+			<icon type="success" size="20"  wx:if="{{item.completed}}" data-id="{{index}}" catchtap="changeCompleted"/>
+			<icon type="waiting" size="20"  wx:if="{{!item.completed}}" data-id="{{index}}" catchtap="changeCompleted"/>
+			<view class="title">{{item.title}}</view> 
+			<view class="content"><text>{{item.time}}</text><text class="import"><block wx:for="{{item.importState}}" wx:key="index">★</block></text></view> 
+		</navigator>  
+		</block> 
+	</view>
+  <view class="addbtn">
+  	<navigator url="/pages/add/add?dayId={{dayId}}" open-type="redirect">
+		<i class="icon iconfont icon-yuanquanjiahao"></i></navigator>
+		<view>{{dayString}}</view>	 
+  </view>
+
+</view>
+<help-component date="list"></help-component> 

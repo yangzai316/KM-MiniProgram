@@ -1,0 +1,4 @@
+<navigator url="/pages/help/help?page={{page}}" class="tohelp"> 
+	<i class="icon iconfont icon-bangzhuzhongxin"></i>
+	<view>使用帮助</view>
+</navigator>

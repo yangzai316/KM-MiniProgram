@@ -1,0 +1,25 @@
+.txt_box{
+  padding:20rpx; 
+}
+.txt{
+  line-height: 100rpx;
+  height: 100rpx; 
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+  font-size: 28rpx;
+  background-color: #fff;
+  padding:0 20rpx; 
+}
+.txt:last-child{
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.txt_l{
+  float: left;
+}
+.txt_r{
+  float: right;
+}  
+.icon{
+  float: right; 
+}

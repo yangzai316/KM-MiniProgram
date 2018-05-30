@@ -1,0 +1,30 @@
+<view class="page">
+    <view class="box" capture-catch:touchstart="slideStart" capture-catch:touchend="slideEnd"> 
+        <!-- 星期 -->
+        <view class="box-flex box1">
+          <view class="flex-item">日</view>
+          <view class="flex-item">一</view>
+          <view class="flex-item">二</view>
+          <view class="flex-item">三</view>
+          <view class="flex-item">四</view>
+          <view class="flex-item">五</view>
+          <view class="flex-item">六</view>
+        </view>
+        <!-- 日期 -->
+        <view class="box2_main">{{currentMonth}}
+            <view class="box-flex box2">
+              <block wx:for="{{currentDayList}}" wx:key="{{index}}"> 
+                  <view class="flex-item {{currentDay!=item.dayNum?'':'active'}} {{item.has?'has':''}} " data-dayNum="{{item.dayNum}}">
+                    {{item.dayNum}} 
+                  </view>  
+              </block>
+            </view>
+        </view>
+        <!-- btn按钮 -->
+        <view class="box-flex box3"> 
+          <view class="current-day">{{currentDate}}</view> 
+          <view class="today" data-dayNum="0">今日</view>   
+        </view> 
+    </view>
+</view>
+  <help-component date="calendar"></help-component> 

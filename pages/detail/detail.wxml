@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">   
+	<view class="input_box">
+		<view class="input_name">日期：</view>
+		<view class="input_val"> {{timeDate}} </view>
+	</view>  
+	<view class="input_box">
+		<view class="input_name">标题：</view>
+		<view class="input_val"> {{detailData.title}} </view>
+	</view> 
+	<view class="input_box">
+		<view class="input_name">内容：</view>
+		<view class="input_val"> {{detailData.content}} </view>
+	</view>
+	<view class="input_box">
+		<view class="input_name">时间：</view>
+		<view class="input_val"> {{detailData.time}} </view>
+	</view>
+	<view class="input_box import_box">
+		<view class="input_name">重要性：</view>
+		<view class="input_val import">
+			<text wx:for="{{detailData.importState}}" wx:key="{{index}}">★</text> 
+		</view>
+	</view>
+	<view class="input_box import_box">
+		<view class="input_name">状态：</view>
+		<view class="input_val"> 
+			<text wx:if="{{detailData.completed}}">已完成</text>
+			<text wx:else>未完成</text>
+		</view>
+	</view>
+	<view class="btn_box"> 
+		<navigator url="/pages/add/add?dayId={{dayId}}&itemId={{itemId}}">
+			<view class="btn btn_remove"> 修改 </view>
+		</navigator>
+		<view class="btn btn_reset" bindtap="removeStorage"> 删除 </view>
+	</view>
+</view> 
+<help-component date="detail"></help-component>

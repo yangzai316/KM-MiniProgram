@@ -1,0 +1,14 @@
+<view class="txt_box">
+	<block wx:if="{{allDataLen>0}}">
+		<block wx:for="{{allData}}" wx:key="{{index}}">
+		  <navigator url="/pages/list/list?dayId={{index}}" class="txt">
+		  	<text class="txt_l">{{item.dayString}}</text>
+		  	<i class="icon iconfont icon-youjiantou"></i>
+		  	<text class="txt_r">{{item.Num}}条</text>
+		  </navigator> 
+		</block>  
+	</block>
+	<block wx:else>
+		<view class="text_center">没有数据哦...</view>
+	</block> 
+</view>

@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">  
+  <image src="/img/logo.jpg" mode="widthFix"></image>
+  <view class="txt">
+    <view><text>K</text>eep <text>M</text>emory</view>
+    <view class="two_txt"><text>K</text>eep <text>M</text>emorandum</view>
+  </view> 
+  <view class="txt">
+    <view class="two_txt1">你记忆</view>
+    <view class="two_txt2">我记录</view>
+  </view>  
+  <view bindtap="goProject" class="gobtn">开始</view>  
+</view>

@@ -1,0 +1,18 @@
+<view class="txt_box"> 
+  <view class="txt">
+    <text class="txt_l">产品名称</text> 
+    <text class="txt_r">KM备忘录</text>
+  </view>
+  <view class="txt">
+    <text class="txt_l">版本号</text> 
+    <text class="txt_r">1.0.0</text>
+  </view>  
+  <view class="txt">
+  	<text class="txt_l">作者</text> 
+  	<text class="txt_r">yangzai</text>
+  </view> 
+  <view class="txt">
+  	<text class="txt_l">意见反馈</text> 
+  	<text class="txt_r">QQ：2441541169(表明来意)</text>
+  </view>     
+</view>

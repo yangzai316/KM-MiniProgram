@@ -1,0 +1,16 @@
+/* pages/project/project.wxss */
+.container{
+	padding: 80rpx 0;
+	background-color: #fff;
+}
+.project_item{
+	width: 60%;
+	height: 200rpx;
+	border:2rpx solid #1180ff;
+	line-height: 200rpx;
+	text-align: center;
+	margin:0 auto 80rpx auto;
+  	font-size:14px; 
+  	color: #1180ff;
+  	border-radius: 4px;
+} 

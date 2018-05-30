@@ -1,0 +1,71 @@
+.page {
+  width: 100%;
+  height: 100%;  
+  font-family: "KaiTi","SimSun";
+  background-color: #fff; 
+  text-align: center; 
+} 
+.box { 
+  margin: 20rpx;
+} 
+.box-flex { 
+  overflow: hidden;
+  clear: both;
+} 
+.active {
+  background-color: #b3d1f5 !important;
+}  
+.box1{
+   color:#727272;
+   font-weight: bold;
+   font-size: 36rpx;
+} 
+.box2_main{
+  position: relative;
+  height: 650rpx; 
+  font-size: 556rpx;
+  color: #f1f1f1;
+  line-height: 650rpx;
+}
+.box2{
+  border-bottom: 1px solid #6fabff;
+  border-top: 1px solid #6fabff; 
+  color:#666; 
+  height: 600rpx;
+  padding-top:50rpx;
+  position: absolute;
+  top:0;
+  font-style:oblique; 
+} 
+.flex-item { 
+  width: 14.2%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50%;
+  float: left; 
+  font-size: 32rpx; 
+} 
+.box3{
+  padding-top: 20rpx;
+}  
+.current-day{
+  width: 40%;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  float: left;
+}
+.today{
+  width: 14.2%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50%;
+  color:#fff;
+  float: right;
+  background-color: #6fabff;
+}
+.has{ 
+  color:#f9ac00;  
+}
+.tohelp{
+  top:500rpx;
+}

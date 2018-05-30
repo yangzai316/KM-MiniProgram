@@ -1,0 +1,77 @@
+.container{
+	margin:20rpx;
+	padding:50rpx 0;
+	background-color: #fff;
+}
+.input_box{
+	overflow: hidden; 
+	clear: both;
+	margin-bottom:40rpx; 
+	line-height: 66rpx;
+}
+.input_name{
+	width: 20%;
+	float: left;
+	padding-right: 20rpx;
+	text-align: right;
+}
+.input_val{
+	width: 72%;
+	float: left;
+}
+.input_val textarea{
+	width: 100%;
+	height: 86rpx; 
+  	box-sizing: border-box;
+  	border-radius: 4rpx; 
+  	padding:10rpx;
+	border: 1px solid #1180ff; 
+	line-height: 28rpx;
+	vertical-align: middle;
+}
+.input_val .content{
+	height: 250rpx;
+}
+.import_box{
+	line-height: 40rpx;
+}
+.import{
+	font-size:40rpx; 
+}
+.import text{
+	margin-right: 12rpx;
+}
+.import_active{
+	color: #1180ff;
+}
+.no_active{
+	color: #dedede;
+}
+.picker{
+	display: inline-block; 
+	font-size: 24rpx;
+}
+.icon-shijian{
+	color:#1180ff;
+	margin-right: 8rpx;
+} 
+.btn{ 
+  width:90%;
+  margin:150rpx auto 0 auto;
+  height: 80rpx;
+  font-size: 28rpx;
+  color:#fff;
+  background-color: #1180ff; 
+}
+.radiobox{
+	display: inline-block;
+	margin-right: 50rpx;
+	width: 160rpx;
+}
+.radiobox icon{
+	position: relative;
+	top:4rpx;
+}
+.radiobox text{
+	margin-left: 10rpx;
+} 

@@ -1,0 +1,16 @@
+page{
+  padding:20rpx;
+  background-color: #fff;
+}
+ view{
+ 	font-size: 26rpx;
+  margin-bottom:20rpx;
+  line-height: 44rpx;
+ }
+ .font_w{
+ 	font-weight: bold;
+ }
+ .icon-yuanquanjiahao{
+	color:#1180ff;
+	font-size:50rpx; 
+ }

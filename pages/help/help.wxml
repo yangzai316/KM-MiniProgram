@@ -1,0 +1,29 @@
+
+<view wx:if="{{page=='project'}}">
+	<view>1、今日模式：点击进入，以今天的日期作为索引，添加需要的备忘记录；</view>
+	<view>2、日历模式：点击进入，会出现日历，点击具体的日期，以选择的日期作为索引，添加需要的备忘记录。</view>
+</view>
+<view wx:if="{{page=='list'}}">
+	<view>1、点击右下角<i class="icon iconfont icon-yuanquanjiahao"></i>，跳转到相应页面，添加备忘记录；</view>
+	<view>2、点击切换按钮（'全部'、'已完成'、'未完成'），切换对应的相关备忘数据；</view> 
+	<view class="font_w">3、<icon type="success" size="20"/>表示该条备忘为'已完成'状态，点击<icon type="success" size="20"/>，修改状态为：未完成；</view>
+	<view class="font_w">4、<icon type="waiting" size="20"/>表示该条备忘为'未完成'状态，点击<icon type="waiting" size="20"/>，修改状态为：已完成。</view> 
+	<view>5、点击该条数据，进入该条数据的详情页面，查看具体详情。</view> 
+</view>
+<view wx:if="{{page=='add'}}">
+	<view>1、填写相关内容，之后，点击'确定'，即可完成备忘记录的添加；</view>
+	<view>2、其中，日期不可修改、标题和时间为必添项。</view> 
+</view>
+<view wx:if="{{page=='calendar'}}">
+	<view>1、进入日历，当前页面为今天日期的月份，浅蓝色背景的日期为今天日份；</view> 
+	<view class="font_w">2、左右滑动可以切换月份；</view> 
+	<view>3、左下角的日期为当前选中的日期，刚进入默认为今天的日期；</view> 
+	<view>4、右下角蓝色的'今日'按钮，可以一次性跳回到今天的日期；</view> 
+	<view>5、黄色的字体表示，该天有备忘数据；</view> 
+	<view  class="font_w">6、点击日期，可跳入该天的备忘记录列表页，可查看和添加数据。</view> 
+</view>
+<view wx:if="{{page=='detail'}}">
+	<view>1、该页面展示详细数据；</view> 
+	<view>2、点击左下角'修改'，跳转到修改页面，修改该条数据内容；</view> 
+	<view>3、点击右下角'删除'，可直接删除该条数据。</view> 
+</view>

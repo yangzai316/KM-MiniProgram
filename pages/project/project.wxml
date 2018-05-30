@@ -1,0 +1,6 @@
+<view class="container">   
+	<navigator url="/pages/list/list" hover-class="navigator-hover" class="project_item">今日模式</navigator>
+	<navigator url="/pages/calendar/calendar" hover-class="navigator-hover" class="project_item">日历模式</navigator>  
+</view>
+<help-component date="project"></help-component> 
+ 

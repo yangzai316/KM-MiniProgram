@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">  
+      <image src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="username">{{userInfo.nickName}}</view> 
+  </view>
+  <view class="txt_box">
+    <navigator url="/pages/records/records" class="txt">
+      <text class="txt_l">备忘总记录</text>
+      <i class="icon iconfont icon-youjiantou"></i>
+    </navigator> 
+    <view class="txt" catchtap="clearData">
+      <text class="txt_l">清空数据</text>
+      <i class="icon iconfont icon-youjiantou"></i>
+      <text class="txt_r {{currentSize>=90?'red':'green'}}">
+        <block wx:if="{{currentSize==0}}">内存充足</block>
+        <block wx:else>内存约已占用：{{currentSize}}%</block>
+      </text>
+    </view> 
+    <navigator url="/pages/about/about" class="txt" >
+      <text class="txt_l">关于</text>
+      <i class="icon iconfont icon-youjiantou"></i>
+    </navigator> 
+    <view class="txt" bindtap="preview">
+      <text class="txt_l">打赏</text>
+      <i class="icon iconfont icon-youjiantou"></i> 
+    </view>  
+  </view>  
+</view>
